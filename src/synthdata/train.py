@@ -75,8 +75,11 @@ def load_small(path: Path) -> Image.Image:
 
 
 class TrainingSet(Dataset):
-    def __init__(self, entries: list[tuple[Image.Image, int, str]]):
+    def __init__(
+        self, entries: list[tuple[Image.Image, int, str]], augmentation="mild"
+    ):
         self.entries = entries
+        self.augmentation = augmentation
 
     def __len__(self) -> int:
         return len(self.entries)
@@ -84,6 +87,7 @@ class TrainingSet(Dataset):
     def __getitem__(self, index: int):
         image, label, kind = self.entries[index]
         if kind == "augment":
+            balance.AUGMENTATION = self.augmentation
             image = balance.augment(image.copy())
         return TRAIN_TRANSFORM(image), label
 
@@ -205,7 +209,7 @@ def fit(entries, seed: int, settings: dict, device, workers: int) -> nn.Module:
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
     loss_function = nn.CrossEntropyLoss()
     loader = DataLoader(
-        TrainingSet(entries),
+        TrainingSet(entries, settings.get("augmentation", "mild")),
         batch_size=settings["batch_size"],
         shuffle=True,
         generator=torch.Generator().manual_seed(seed),
@@ -390,6 +394,9 @@ def parse_args(argv=None) -> argparse.Namespace:
     parser.add_argument("--device", default="auto", help="auto, cuda, mps, or cpu")
     parser.add_argument("--workers", type=int, default=default_workers())
     parser.add_argument(
+        "--augmentation", choices=tuple(balance.AUGMENTATIONS), default="mild"
+    )
+    parser.add_argument(
         "--tag",
         action="append",
         default=[],
@@ -417,11 +424,13 @@ def settings_from(args, pool_dir) -> dict:
         "epochs": args.epochs,
         "batch_size": args.batch_size,
         "budget": args.budget,
+        "augmentation": args.augmentation if args.method == "augment" else None,
     }
 
 
 def main(argv=None) -> None:
     args = parse_args(argv)
+    balance.AUGMENTATION = args.augmentation
     pool_dir = pools.resolve(args.pool) if args.pool else None
     settings = settings_from(args, pool_dir)
     run_dir = RUNS_DIR / args.name

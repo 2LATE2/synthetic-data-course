@@ -1,0 +1,18 @@
+# Exact main package versions used for Meeting 1 measurements.
+# Install with Python 3.13.2. CUDA wheels need this additional package index.
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.14.1+cu130
+torchvision==0.29.1+cu130
+numpy==2.4.5
+pillow==12.3.0
+matplotlib==3.11.2
+pandas==3.0.3
+pytest==9.1.1
+ruff==0.17.2
+
+# Added for Meeting 2 generation (torch unchanged):
+diffusers==0.40.0
+transformers==5.22.2
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface-hub==1.33.0

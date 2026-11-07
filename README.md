@@ -1,5 +1,34 @@
 # Synthetic Data Generation with Diffusion Models
 
+**Autor rozwiązania zadania 1: Mikołaj Zwiefka**
+
+Rozwiązanie „Real-Data Baselines” z pliku `as1.pdf` znajduje się w
+`src/synthdata/balance.py`, a wyniki i interpretacja w [EXPERIMENTS.md](EXPERIMENTS.md).
+Wariant augmentacji wybiera parametr `--augmentation mild` lub `--augmentation strong`.
+Zmienia się wyłącznie maksymalny kąt obrotu (10 lub 25 stopni).
+Obie wersje zachowano w kodzie, aby można było odtworzyć porównanie.
+
+Dokładne wersje głównych bibliotek użytych lokalnie zapisano w
+`requirements-runtime.txt` i `evidence/runtime-versions.json`.
+Środowisko pomiarowe korzysta z zainstalowanego PyTorch CUDA 13.0;
+oryginalny `uv.lock` opisuje inne środowisko. Szczegóły: [protocol.md](protocol.md).
+
+**Zadanie 2 („Text-to-Image Generation”, `as2.pdf`):** plan i reguła wyboru —
+[protocol-m2.md](protocol-m2.md); polecenia generowania i treningu —
+`scripts/run_m2.py`; tabele, wykresy, typy błędów, wybór puli i wynik testu —
+sekcja „Meeting 2” w [EXPERIMENTS.md](EXPERIMENTS.md) (tworzona przez
+`scripts/report_m2.py`). Pule obrazów z manifestami i arkuszami kontaktowymi są
+w `pools/m2-*`. Do generowania doinstalowano diffusers 0.40.0,
+transformers 5.22.2, accelerate 1.15.0, safetensors 0.8.0 (bez zmiany PyTorch).
+
+**Zadanie 3 („Generating from Training Photos”, `as3.pdf`):** plan i reguła wyboru —
+[protocol-m3.md](protocol-m3.md); generowanie i trening — `scripts/run_m3.py`;
+miara bliskości obrazów do zdjęć treningowych — `scripts/closeness.py`; tabele,
+wykresy obu przemiatań, przykłady, odpowiedź na pytanie „jak blisko zdjęć” i wyniki
+testu — sekcja „Meeting 3” w [EXPERIMENTS.md](EXPERIMENTS.md) (tworzona przez
+`scripts/report_m3.py`). Pule: `pools/m3-strength-*` (img2img) i `pools/m3-ip-*`
+(IP-Adapter).
+
 Starter repository for the course
 [Synthetic Data Generation with Diffusion Models](https://patrykbart.github.io/teaching/synthetic-data-generation-with-diffusion-models/).
 Every student answers the same question on the same data:

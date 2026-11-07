@@ -1,0 +1,17 @@
+[
+  {"pool": "m2-base", "index": 11, "label": "zebra stripes, not spots"},
+  {"pool": "m2-base", "index": 7, "label": "serval body, leopard spots"},
+  {"pool": "m2-base", "index": 18, "label": "leopard rosettes (bronze)"},
+  {"pool": "m2-base", "index": 21, "label": "extreme crop, merged body"},
+  {"pool": "m2-base", "index": 6, "label": "person in the frame"},
+  {"pool": "m2-base", "index": 13, "label": "safety-blocked (black)"},
+  {"pool": "m2-guidance-2", "index": 16, "label": "two fused cats"},
+  {"pool": "m2-guidance-2", "index": 1, "label": "melted face"},
+  {"pool": "m2-guidance-2", "index": 20, "label": "brown tabby: wrong breed"},
+  {"pool": "m2-guidance-15", "index": 9, "label": "oversaturated, pink ears"},
+  {"pool": "m2-guidance-15", "index": 17, "label": "neon eyes, cut-off head"},
+  {"pool": "m2-steps-10", "index": 6, "label": "dog-like head"},
+  {"pool": "m2-prompt-simple", "index": 19, "label": "oversized bat ears"},
+  {"pool": "m2-prompt-simple", "index": 11, "label": "zebra face, collar"},
+  {"pool": "m2-prompt-simple", "index": 14, "label": "tiger stripes, same pose"}
+]

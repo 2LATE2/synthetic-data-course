@@ -1,0 +1,71 @@
+{
+  "_reference_nearest_other_training_photo": {
+    "mean": 0.6718956549962362,
+    "min": 0.4887351393699646,
+    "max": 0.8069314956665039
+  },
+  "_reference_within_training_photos": 0.5375025868415833,
+  "m2-base": {
+    "images": 109,
+    "within_pool_similarity": 0.5219161510467529,
+    "sim_to_source": null,
+    "sim_to_nearest_train": 0.493250882680263,
+    "pixel_mad_to_source": null
+  },
+  "m3-strength-0.3": {
+    "images": 110,
+    "within_pool_similarity": 0.5479001998901367,
+    "sim_to_source": 0.8634926980192011,
+    "sim_to_nearest_train": 0.8634927001866427,
+    "pixel_mad_to_source": 0.04079901384697719
+  },
+  "m3-strength-0.5": {
+    "images": 109,
+    "within_pool_similarity": 0.5539067387580872,
+    "sim_to_source": 0.7406212753112164,
+    "sim_to_nearest_train": 0.7463784190492893,
+    "pixel_mad_to_source": 0.0637530662939636
+  },
+  "m3-strength-0.7": {
+    "images": 110,
+    "within_pool_similarity": 0.5421232581138611,
+    "sim_to_source": 0.5877969451925972,
+    "sim_to_nearest_train": 0.6192481796849858,
+    "pixel_mad_to_source": 0.10377768403427168
+  },
+  "m3-strength-0.9": {
+    "images": 110,
+    "within_pool_similarity": 0.5130800604820251,
+    "sim_to_source": 0.4715510694818063,
+    "sim_to_nearest_train": 0.5464427761056206,
+    "pixel_mad_to_source": 0.17113022932952102
+  },
+  "m3-ip-0.3": {
+    "images": 110,
+    "within_pool_similarity": 0.5669740438461304,
+    "sim_to_source": 0.494766305251555,
+    "sim_to_nearest_train": 0.5633155107498169,
+    "pixel_mad_to_source": 0.29147297509691933
+  },
+  "m3-ip-0.5": {
+    "images": 110,
+    "within_pool_similarity": 0.578019917011261,
+    "sim_to_source": 0.546219808676026,
+    "sim_to_nearest_train": 0.5944017757068981,
+    "pixel_mad_to_source": 0.2849323574792255
+  },
+  "m3-ip-0.7": {
+    "images": 108,
+    "within_pool_similarity": 0.5463615655899048,
+    "sim_to_source": 0.5538278037199268,
+    "sim_to_nearest_train": 0.5943285138518722,
+    "pixel_mad_to_source": 0.27145389191530367
+  },
+  "m3-ip-1.0": {
+    "images": 106,
+    "within_pool_similarity": 0.5204919576644897,
+    "sim_to_source": 0.5418695335118275,
+    "sim_to_nearest_train": 0.5779040714479843,
+    "pixel_mad_to_source": 0.2591995050041181
+  }
+}

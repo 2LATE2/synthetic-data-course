@@ -1,0 +1,16 @@
+{
+  "recorded_utc": "2026-10-24T08:03:13.965621+00:00",
+  "selected_augmentation_run": "m1-augment-strong",
+  "test_runs": [
+    "m1-real",
+    "m1-oversample",
+    "m1-augment-strong"
+  ],
+  "rule": "Highest mean validation Mau recall; tie: macro-F1; exact tie: mild.",
+  "validation_sha256": {
+    "m1-real": "a358130584fb6bd226b6f438fb4bd133e4da6da2ee9b4ac3d40ca8634c8bae2b",
+    "m1-oversample": "946ef70941e8d6160df0c44e2d1ffc15e990664f79ba7ef038375a0482f51587",
+    "m1-augment": "d52c8795167f6fd8e97ecd4c23972adb638ff3c2c61f3113af38bb5c65a15b61",
+    "m1-augment-strong": "a56663f0719d470c16cb4ca028d785456932ee6d2f338afe12ce8e7797a7aa2d"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "method": "real",
+  "pool": null,
+  "model": "efficientnet_b0",
+  "epochs": 8,
+  "batch_size": 64,
+  "budget": 55,
+  "augmentation": null,
+  "name": "m1-real",
+  "seed": 2,
+  "added": [],
+  "seconds": 37.2,
+  "finished": "2026-10-24T07:50:43+00:00",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "python": "3.13.2",
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130"
+}

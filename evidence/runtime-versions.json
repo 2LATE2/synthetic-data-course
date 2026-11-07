@@ -1,0 +1,12 @@
+{
+  "torch": "2.14.1+cu130",
+  "torchvision": "0.29.1+cu130",
+  "numpy": "2.4.5",
+  "pillow": "12.3.0",
+  "matplotlib": "3.11.2",
+  "pandas": "3.0.3",
+  "pytest": "9.1.1",
+  "ruff": "0.17.2",
+  "OMP_NUM_THREADS": "4",
+  "MKL_NUM_THREADS": "4"
+}

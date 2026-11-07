@@ -1,0 +1,94 @@
+{
+  "name": "m1-oversample",
+  "method": "oversample",
+  "pool": null,
+  "model": "efficientnet_b0",
+  "epochs": 8,
+  "batch_size": 64,
+  "budget": 55,
+  "augmentation": null,
+  "split": "val",
+  "tags": {},
+  "seeds": [
+    {
+      "seed": 0,
+      "egyptian_mau_recall": 0.65,
+      "macro_f1": 0.8911748218209377,
+      "accuracy": 0.89375,
+      "recall": {
+        "Abyssinian": 1.0,
+        "Bengal": 0.8,
+        "Birman": 0.9,
+        "Bombay": 1.0,
+        "Egyptian Mau": 0.65,
+        "Ragdoll": 0.9,
+        "Russian Blue": 1.0,
+        "Siamese": 0.9
+      }
+    },
+    {
+      "seed": 1,
+      "egyptian_mau_recall": 0.6,
+      "macro_f1": 0.8595524659761755,
+      "accuracy": 0.8625,
+      "recall": {
+        "Abyssinian": 0.95,
+        "Bengal": 0.85,
+        "Birman": 0.85,
+        "Bombay": 1.0,
+        "Egyptian Mau": 0.6,
+        "Ragdoll": 0.8,
+        "Russian Blue": 1.0,
+        "Siamese": 0.85
+      }
+    },
+    {
+      "seed": 2,
+      "egyptian_mau_recall": 0.65,
+      "macro_f1": 0.8730222710665867,
+      "accuracy": 0.875,
+      "recall": {
+        "Abyssinian": 0.95,
+        "Bengal": 0.8,
+        "Birman": 0.9,
+        "Bombay": 1.0,
+        "Egyptian Mau": 0.65,
+        "Ragdoll": 0.8,
+        "Russian Blue": 1.0,
+        "Siamese": 0.9
+      }
+    },
+    {
+      "seed": 3,
+      "egyptian_mau_recall": 0.75,
+      "macro_f1": 0.8933944493155019,
+      "accuracy": 0.89375,
+      "recall": {
+        "Abyssinian": 0.95,
+        "Bengal": 0.8,
+        "Birman": 0.95,
+        "Bombay": 1.0,
+        "Egyptian Mau": 0.75,
+        "Ragdoll": 0.85,
+        "Russian Blue": 1.0,
+        "Siamese": 0.85
+      }
+    },
+    {
+      "seed": 4,
+      "egyptian_mau_recall": 0.7,
+      "macro_f1": 0.8983615712005567,
+      "accuracy": 0.9,
+      "recall": {
+        "Abyssinian": 0.95,
+        "Bengal": 0.8,
+        "Birman": 0.95,
+        "Bombay": 1.0,
+        "Egyptian Mau": 0.7,
+        "Ragdoll": 0.9,
+        "Russian Blue": 1.0,
+        "Siamese": 0.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-11-07T10:22:58.534048+00:00",
+  "chosen": {
+    "img2img": "m3-strength-0.9",
+    "ip-adapter": "m3-ip-0.3"
+  },
+  "rule": "Per mode: highest mean validation Mau recall; tie: macro-F1; then the 0.5 pool.",
+  "validation_sha256": {
+    "m3-strength-0.3": "e89ced55ad838d9916c0af89510d2a6ae3e01216af03614eec18966b8ecefb2f",
+    "m3-strength-0.5": "5b55c9a5759fa7ae9d6f049b72784e9afda310f86c6d1e0e10daf62da193be91",
+    "m3-strength-0.7": "83725d2b22247ca18f3ab68f1b11186de51384e84ea81469c9d6c03a244e4ebb",
+    "m3-strength-0.9": "8e4653da4dfa32e8394da43af8c60be71b0f19186f0dfd05179fd8e7069f95c8",
+    "m3-ip-0.3": "e17b9a11a61c1d0232af96cb239b444a7612492ef572ef268d5fbd2bf57631ed",
+    "m3-ip-0.5": "84248b6f25adb6b2087f0abe3fb8bc4c3b485fa056c7a72a5802bef54d101c5b",
+    "m3-ip-0.7": "fe88f8bfa26418acbdfc09364eedeb136c4594ee2f4a08697d3c9d388d4c0101",
+    "m3-ip-1.0": "a6f9fedccc6a840457b5b08fd8b118a3b33801f9f5449a821c5c1f4f23dee01b"
+  }
+}

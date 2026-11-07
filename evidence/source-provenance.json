@@ -1,0 +1,9 @@
+{
+  "template_commit": "f55b22e546a4d029ec28d31ec4525968b2e388fd",
+  "sha256": {
+    "data/split.csv": "877d5ab1433fd361fecb61146243c2f69b64fc5aed01c3d86d323649dc09f68a",
+    "src/synthdata/balance.py": "cf016a35df5a97d35b0eebc5a86379543d35b51a8a70bae1c14ac9e9d00291d4",
+    "src/synthdata/train.py": "5a9090fd833a7407c9bc0d6123a230a0a1bb8d30d84a3894ea23a65235f96c7b",
+    "protocol.md": "05b2df7857a7f82eb4c4ca2e1cb7f97dd58286f23ae49f9f54ebe2d9ecf95ddf"
+  }
+}

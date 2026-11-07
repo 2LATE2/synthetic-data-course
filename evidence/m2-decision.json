@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-11-07T08:26:07.472298+00:00",
+  "chosen_pool": "m2-base",
+  "rule": "Highest mean validation Mau recall; tie: macro-F1; then m2-base.",
+  "validation_sha256": {
+    "m2-base": "daee9fd3a0938b5fbe83de6fb604fb81c79c579dd49cc0045fec3587dafbf409",
+    "m2-guidance-2": "b6f70fb644d01fb580175bdbecc8de41c664ec53174dbbd41903a9576c20748e",
+    "m2-guidance-15": "ba836ab8169b6fe9089c5b1dad3c16ffa41a840e17386935e95af17233b69fe5",
+    "m2-steps-10": "a17f21dbe08b04df211f3df9bb1717ce99f3deec757b324a4e57f28667b606a1",
+    "m2-prompt-simple": "d8234f7b1ea4980b38053fd45e81b1866bfb86c58fd19a1f371bfe4924f93619"
+  }
+}
